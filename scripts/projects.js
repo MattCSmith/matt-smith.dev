@@ -67,7 +67,7 @@ projects.forEach(p => {
     const button = document.createElement('a');
     button.setAttribute('class', 'btn btn-outline-dark');
     button.textContent = 'Find out more';
-    button.href = `https://github.com/MattCSmith/matt-smith.dev/project/${url}.md`
+    button.href = `https://github.com/MattCSmith/matt-smith.dev/tree/master/project/${url}.md`
     body.appendChild(button)
 
     const footer = document.createElement('div');
