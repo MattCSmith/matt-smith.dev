@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matt Smith</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="fixed">
+                    <div class="header">
+                        <img class="mx-auto d-block" src="./images/avatar.png">
+                        <h1>MATTHEW <span>SMITH</span></h1>
+                        <h2>FULLSTACK DEVELOPER</h2>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://linkedin.com/in/matthew-c-smith/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/mattcsmith">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="mailto:github@matt-smith.dev">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="navigation text-centre">
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                            data-target="#aboutModal">
+                            <i class="far fa-user-circle"></i> About
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                            data-target="#skillsModal">
+                            <i class="fas fa-award"></i> Skills
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal"
+                            data-target="#requestModal">
+                            <i class="far fa-file"></i> Request CV
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-9 content">
+                <div class="projects text-center">
+                    <h1 class="mt-4 mb-0">Projects</h1>
+                    <p class="mb-4 pb-3">A sample collection of my latest and favourite opensource projects</p>
+                </div>
+                
+                <div class="card-columns" id="projectContainer">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="far fa-user-circle"></i> About Matthew</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A self taught, highly motivated and dedicated individual, with a strong passion for web and
+                            systems development.</p>
+                        <p>Able to effectively self-manage during independent projects, as well as collaborate or lead
+                            in a team setting.</p>
+                        <p>Committed to self development, striving to provide a diverse skill-set and knowledge to a
+                            high
+                            standard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillstModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="fas fa-award"></i> Skills</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="d-block text-muted text-center mb-0">A small collection of areas I am knowledgeable in:</p>
+                        <div class="row text-center" id="skills">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="far fa-file"></i> Request CV</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>I am always interest in exploring exciting new projects and opportunities, if you have one
+                            you think would be of interest please reach out to me via email. A CV can be provided upon
+                            request to credible organisations and agencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/projects.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
