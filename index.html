@@ -13,6 +13,25 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./styles.css">
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.matt-smith.dev"]);
+        _paq.push(["setDomains", ["*.matt-smith.dev"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//stats.thecode.zone/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
 </head>
 
 <body>
@@ -62,7 +81,7 @@
                     <h1 class="mt-4 mb-0">Projects</h1>
                     <p class="mb-4 pb-3">A sample collection of my latest and favourite opensource projects</p>
                 </div>
-                
+
                 <div class="card-columns" id="projectContainer">
 
                 </div>
@@ -104,9 +123,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p class="d-block text-muted text-center mb-0">A small collection of areas I am knowledgeable in:</p>
+                        <p class="d-block text-muted text-center mb-0">A small collection of areas I am knowledgeable
+                            in:</p>
                         <div class="row text-center" id="skills">
-                            
+
                         </div>
                     </div>
                 </div>
